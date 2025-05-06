@@ -20,7 +20,7 @@ public class AboutFor {
 //
 //        System.out.println("Автор: " + playlist[i].author + " " + "Заголовок: " + playlist[i].title + " " + "Длительность: " + playlist[i].duration);
 //
-//        i = i + 1;
+//        i++;
 //
 //        System.out.println("Автор: " + playlist[i].author + " " + "Заголовок: " + playlist[i].title + " " + "Длительность: " + playlist[i].duration);
 //
@@ -47,7 +47,7 @@ public class AboutFor {
                 {8,9,5},
                 {10,10,10,10,10,10,10}
         };
-        for (int i = 0; i < strangerThings.length; i = i + 1) {
+        for (int i = 0; i < strangerThings.length; i++) {
             System.out.println(strangerThings[i][0]);
         }
     }
