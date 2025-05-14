@@ -8,8 +8,10 @@ public class Flat {
     int floor; //этаж
     boolean isForRent; //квартира для сдачи
     boolean isApartment; // это апартаменты?
+    Room room; //объект класса Room
 
-    public Flat(double square, int countOfRoom, String address, String phone, int floor, boolean isForRent, boolean isApartment) {
+    public Flat(double square, int countOfRoom, String address, String phone, int floor, boolean isForRent,
+                boolean isApartment, Room room) {
         this.square = square;
         this.countOfRoom = countOfRoom;
         this.address = address;
@@ -17,5 +19,6 @@ public class Flat {
         this.floor = floor;
         this.isForRent = isForRent;
         this.isApartment = isApartment;
+        this.room = room;
     }
 }
