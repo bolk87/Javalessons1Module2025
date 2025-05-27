@@ -18,21 +18,21 @@ import java.util.List;
 
 public class Task4 {
     public static void main(String[] args) {
-        List <Company> companies = List.of (new Company("СССР", 1987, List.of(
+        List <Company> companies = List.of (new Company("Мосфильм", 1987, List.of(
                 new Movie("Москва слезам не верит", 10, "драма",
                         "СССР", true, 1979),
-                new Movie("Интерстелар", 10, "фантастика",
-                        "США", false, 2014),
-                new Movie("Ла-ла Ленд", 10, "мюзикл",
-                        "США", true, 2017)
+                new Movie("Любовь и голуби", 9, "комедия",
+                        "СССР", false, 1985),
+                new Movie("Благословите женщину", 8, "драма",
+                        "Россия", false, 2003)
         )),
-            new Company("СССР", 1987, List.of(
-                    new Movie("Москва слезам не верит", 10, "драма",
-                            "СССР", true, 1979),
-                    new Movie("Интерстелар", 10, "фантастика",
-                            "США", false, 2014),
-                    new Movie("Ла-ла Ленд", 10, "мюзикл",
-                            "США", true, 2017)
+            new Company("20th Century Studios, Inc.", 1935, List.of(
+                    new Movie("Аватар", 10, "фантастика",
+                            "США, Великобритания", false, 2009),
+                    new Movie("Изгой", 9, "драма",
+                            "США", false, 2000),
+                    new Movie("Один дома", 10, "комедия",
+                            "США", false, 1990)
             )));
         companies.forEach(company -> {
             String moviesString = String.join(", ",
